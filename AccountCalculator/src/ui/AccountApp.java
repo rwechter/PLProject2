@@ -21,6 +21,7 @@ public class AccountApp {
             choice = Console.getString("\nContinue? (y/n): ");
         }
         Console.displayLine("\nMonthly Fees\nChecking fee: " + acc.getMonthlyFeeFormatted());
+        acc.subtractMonthlyFee();
         Console.displayLine("\nFinal Balance\nChecking: " + acc.getBalanceFormatted());
     }
 }
